@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Testing_Game
 {
@@ -28,8 +29,8 @@ namespace Testing_Game
             InitializeComponent();
             Random rnd = new Random();
 
-            int randomNum1 = rnd.Next(0, 10);
-            int randomNum2 = rnd.Next(0, 10);
+            int randomNum1 = rnd.Next(0, 5);
+            int randomNum2 = rnd.Next(0, 5);
             //int randomNum3 = rnd.Next(0, 10);
             //int randomNum4 = rnd.Next(0, 10);
 
@@ -56,18 +57,18 @@ namespace Testing_Game
                 lbDisplay.ClearValue(ListBox.ItemsSourceProperty);
                 lbDisplay.ItemsSource = new List<string> { (num1 + "+" + num2 + "=" + inputSum).ToString() };
                 Random rnd = new Random();
-                int randomNum1 = rnd.Next(0, 10);
-                int randomNum2 = rnd.Next(0, 10);
+                int randomNum1 = rnd.Next(0, 5);
+                int randomNum2 = rnd.Next(0, 5);
 
                 txtNum1.Text = randomNum1.ToString();
                 txtNum2.Text = randomNum2.ToString();
                 right++;
                 if (right >= 8)
                 {
-                    MessageBox.Show("Congratulations! you passed the exam!");
-                    SoundPlayer sound = new SoundPlayer(@"C:\Users\belle\Documents\cheering.wav");
-                    sound.Play();
-                }
+                    MessageBox.Show("Congratulations! you passed the exam!😊");
+                    SoundPlayer sound = new SoundPlayer(@"D:\School_Materials\CSI260\Final\Testing_Game\cheering.wav");
+                    sound.Play();                
+                }               
             }
            
             else
