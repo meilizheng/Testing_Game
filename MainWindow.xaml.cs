@@ -24,6 +24,7 @@ namespace Testing_Game
     public partial class MainWindow : Window
     {
         int right = 0;
+        int[] arry;
         public MainWindow()
         {
             InitializeComponent();
@@ -31,15 +32,11 @@ namespace Testing_Game
 
             int randomNum1 = rnd.Next(0, 5);
             int randomNum2 = rnd.Next(0, 5);
-            //int randomNum3 = rnd.Next(0, 10);
-            //int randomNum4 = rnd.Next(0, 10);
-
 
             txtNum1.Text = randomNum1.ToString();
             txtNum2.Text = randomNum2.ToString();
-            //txtNum3.Text = randomNum3.ToString();
-            //txtNum4.Text = randomNum4.ToString();
 
+            
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
@@ -54,21 +51,24 @@ namespace Testing_Game
            
             if (inputSum == sum)
             {
-                lbDisplay.ClearValue(ListBox.ItemsSourceProperty);
+                //lbDisplay.ClearValue(ListBox.ItemsSourceProperty);
                 lbDisplay.ItemsSource = new List<string> { (num1 + "+" + num2 + "=" + inputSum).ToString() };
+                //arry.Add(int.Parse(txtSum.Text));
                 Random rnd = new Random();
                 int randomNum1 = rnd.Next(0, 5);
                 int randomNum2 = rnd.Next(0, 5);
 
                 txtNum1.Text = randomNum1.ToString();
                 txtNum2.Text = randomNum2.ToString();
+                txtSum.Text = "";
                 right++;
-                if (right >= 8)
+                if (right >= 2)
                 {
                     MessageBox.Show("Congratulations! you passed the exam!😊");
                     SoundPlayer sound = new SoundPlayer(@"D:\School_Materials\CSI260\Final\Testing_Game\cheering.wav");
                     sound.Play();                
-                }               
+                }  
+                //lbDisplay.ItemsSource = new List<string> { arry.ToString() };
             }
            
             else

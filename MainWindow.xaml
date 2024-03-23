@@ -14,7 +14,7 @@
             <TextBox x:Name="txtNum2" Height="35" Canvas.Left="230" TextWrapping="Wrap" Canvas.Top="74" Width="115" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22"/>
             <Label x:Name="lbEqual" Content="=" Height="29" Canvas.Left="365" Canvas.Top="74" Width="50" FontSize="16"/>
             <TextBox x:Name="txtSum" Height="36" Canvas.Left="415" TextWrapping="Wrap" Canvas.Top="73" Width="110" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="22"/>
-            <Button x:Name="btnSubmit" Content="Sumbit" Height="44" Canvas.Left="590" Canvas.Top="70" Width="105" Click="btnSubmit_Click" FontSize="16" RenderTransformOrigin="0.571,2.91" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Button x:Name="btnSubmit" Content="Submit" Height="44" Canvas.Left="590" Canvas.Top="70" Width="105" Click="btnSubmit_Click" FontSize="16" RenderTransformOrigin="0.571,2.91" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <ListBox x:Name="lbDisplay" Height="120" Canvas.Left="35" Canvas.Top="202" Width="290" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22"/>
             <Label x:Name="lbDisplay1" Content="Display Result" Height="45" Canvas.Left="39" Canvas.Top="157" Width="238" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Button x:Name="btnGoToNextLevel" Content="Next Level" Height="60" Canvas.Left="435" Canvas.Top="229" Width="260" Click="btnGoToNextLevel_Click"/>

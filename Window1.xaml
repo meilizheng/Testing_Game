@@ -9,11 +9,11 @@
     <Grid Background="#FF78A3DC">
         <Label x:Name="lbSubtract" Content="Subtract between 10" HorizontalAlignment="Left" Height="45" Margin="45,34,0,0" VerticalAlignment="Top" Width="215" FontSize="16"/>
         <TextBox x:Name="txtNum3" HorizontalAlignment="Left" Height="45" Margin="45,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontSize="16"/>
-        <Label x:Name="lbSub" Content="-" HorizontalAlignment="Left" Height="22" Margin="200,116,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="lbSub" Content="-" HorizontalAlignment="Left" Height="55" Margin="200,104,0,0" VerticalAlignment="Top" Width="60" FontSize="22"/>
         <TextBox x:Name="txtNum4" HorizontalAlignment="Left" Height="45" Margin="230,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="16"/>
-        <Label x:Name="lbEquals" Content="=" HorizontalAlignment="Left" Height="40" Margin="360,116,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="lbEquals" Content="=" HorizontalAlignment="Left" Height="40" Margin="360,104,0,0" VerticalAlignment="Top" Width="60" FontSize="22"/>
         <TextBox x:Name="txtSubResult" HorizontalAlignment="Left" Height="45" Margin="388,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" FontSize="16"/>
-        <Button x:Name="butSubSubmit" Content="Sumbit" HorizontalAlignment="Left" Height="45" Margin="560,104,0,0" VerticalAlignment="Top" Width="150" Click="butSubSubmit_Click" FontSize="16"/>
+        <Button x:Name="butSubSubmit" Content="Submit" HorizontalAlignment="Left" Height="45" Margin="560,104,0,0" VerticalAlignment="Top" Width="150" Click="butSubSubmit_Click" FontSize="16"/>
         <ListBox x:Name="lbSubtractResult" HorizontalAlignment="Left" Height="155" Margin="45,217,0,0" VerticalAlignment="Top" Width="265" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="16"/>
         <Button x:Name="btnNextLevel" Content="Go To Next Level" HorizontalAlignment="Left" Height="60" Margin="480,274,0,0" VerticalAlignment="Top" Width="210" FontSize="16"/>
 

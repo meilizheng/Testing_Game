@@ -27,8 +27,8 @@ namespace Testing_Game
         {
             InitializeComponent();
             Random rand = new Random();
-            int num3 = rand.Next(0, 10);
-            int num4 = rand.Next(0, 10);
+            int num3 = rand.Next(0, 50);
+            int num4 = rand.Next(0, 50);
             if(num3 < num4)
             {
                 int temp = num3;
@@ -37,6 +37,7 @@ namespace Testing_Game
             }
             txtNum3.Text = num3.ToString();
             txtNum4.Text = num4.ToString();
+            int[] arry;
         }   
 
         private void butSubSubmit_Click(object sender, RoutedEventArgs e)
@@ -52,8 +53,8 @@ namespace Testing_Game
                     lbSubtractResult.ClearValue(ListBox.ItemsSourceProperty);
                     lbSubtractResult.ItemsSource = new List<string> { (Num3 + "-" + Num4 + "=" + subResult).ToString() };
                     Random rnd = new Random();
-                    int randomNum1 = rnd.Next(0, 10);
-                    int randomNum2 = rnd.Next(0, 10);
+                    int randomNum1 = rnd.Next(0, 50);
+                    int randomNum2 = rnd.Next(0, 50);
 
                 if (randomNum1 < randomNum2)
                 {
@@ -64,6 +65,7 @@ namespace Testing_Game
 
                     txtNum3.Text = randomNum1.ToString();
                     txtNum4.Text = randomNum2.ToString();
+                    txtSubResult.Text = "";
                     right++;
                     if (right >= 8)
                     {
